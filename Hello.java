@@ -1,6 +1,12 @@
 public class Hello{
 	public static void ain(String[] args){
-		System.out.println("Hello, "+args[0]+"!");
+		String name = "World";
+
+		if(args.length != 0){
+			name=args[0];
+		}
+
+		System.out.println("Hello, "+name+"!");
 	}
 }
 
